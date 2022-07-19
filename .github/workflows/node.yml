@@ -1,14 +1,14 @@
 name: Nasa Project CI
 on:
   push:
-    branches: [ main ]
+    branches: [main]
   pull_request:
-    branches: [ main ]
+    branches: [main]
 jobs:
   build:
     env:
       CI: true
-      MONGO_URL: mongodb://localhost/nasa
+      MONGO_URL: mongodb://localhost/nasa-project
     strategy:
       matrix:
         node-version: [14.x, 16.x]
